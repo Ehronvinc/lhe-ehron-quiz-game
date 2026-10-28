@@ -4,6 +4,7 @@ const eachQuestion = document.querySelector(".each-ques-container");
 const choices = document.querySelector(".choices-container");
 const nextBtn = document.querySelector(".next-btn");
 const buttonsRestartNext = document.getElementById("btn-start-next");
+const score = document.getElementById("score-ct");
 const answers = [];
 const questions = [
   {
@@ -50,10 +51,13 @@ const questions = [
 
 let currentQues = 0;
 let isAnswered = false;
+let scoreCtr = 0;
 
 function startButton(e) {
   if (e.key === "Enter") {
     hero.classList.add("hidden");
+    score.classList.replace("hidden", "score-text");
+    score.innerHTML = scoreCount();
     buttonsRestartNext.classList.replace("hidden", "btn-container");
     document.body.removeEventListener("keydown", startButton);
     showQuestions(0);
@@ -90,7 +94,8 @@ function showQuestions(index) {
 
 function validate(index, choice) {
   if (choice === questions[index].answers) {
-    console.log("Correct");
+    scoreCtr++;
+    scoreCount();
   } else {
     console.log("Wrong");
   }
@@ -110,11 +115,17 @@ function proceedBtn() {
   if (isAnswered) {
     if (currentQues < questions.length - 1) {
       currentQues++;
+      isAnswered = false;
       showQuestions(currentQues);
     }
   } else {
     console.log("ef");
   }
+}
+
+/* Score Counter */
+function scoreCount() {
+  return (score.innerHTML = `<p>Score: ${scoreCtr}/10</p>`);
 }
 
 document.body.addEventListener("keydown", startButton);

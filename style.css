@@ -1,0 +1,114 @@
+@import url("https://fonts.googleapis.com/css2?family=Love+Light&family=Love+Ya+Like+A+Sister&display=swap");
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: aliceblue;
+  min-height: 100vh;
+}
+
+/* Navigation */
+.navbar-container {
+  background-color: #6d061e;
+  box-shadow: 1px 1px 5px;
+}
+
+.nav-text {
+  padding: 10px;
+  font-family: "Love Light", cursive;
+  font-size: 1.5rem;
+  color: rgb(199, 185, 192);
+}
+
+/* Score */
+
+/* Hero Section */
+.hero-container {
+  font-family: "Love Ya Like A Sister", cursive;
+  text-shadow: 1px 1px 3px wheat;
+  font-size: 2rem;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 200px;
+}
+
+.hero-start-text {
+  margin-top: 15px;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  color: whitesmoke;
+  padding: 10px;
+  border-radius: 5px;
+  text-shadow: 1px 1px 2px wheat;
+  background-color: #6d061e;
+  font-size: 1.2rem;
+}
+
+/* Hide Element */
+.hidden {
+  display: none;
+}
+
+/* Buttons */
+.btn-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 40px;
+}
+
+/* Questions and answers */
+.question-container {
+  font-size: 1rem;
+  margin-top: 150px;
+}
+
+.question {
+  text-align: center;
+  font-family: "Love Ya Like A Sister", cursive;
+  text-shadow: 1px 1px 3px wheat;
+  color: #000000;
+  font-size: 2rem;
+  margin-bottom: 30px;
+}
+
+.choices-container {
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  grid-template-columns: repeat(2, auto);
+  row-gap: 20px;
+  column-gap: 100px;
+}
+
+.choices-container button {
+  font-family: "Love Ya Like A Sister", cursive;
+  padding: 5px;
+  background-color: #6d061e;
+  color: whitesmoke;
+}
+
+.choices-container button:hover {
+  background-color: #6d061e7e;
+}
+
+.choices-container button:disabled {
+  font-family: "Love Ya Like A Sister", cursive;
+  padding: 5px;
+  background-color: #6d061e;
+  color: whitesmoke;
+  cursor: not-allowed;
+}
