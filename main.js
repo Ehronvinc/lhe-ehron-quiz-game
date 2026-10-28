@@ -27,6 +27,16 @@ const questions = [
     answers: "a. Those Eyes",
   },
   {
+    question: "When did Lhean and Ehron get together?",
+    choices: [
+      "a. February 8, 2022",
+      "b. February 9, 2022",
+      "c. February 8, 2023",
+      "d. February 9, 2023",
+    ],
+    answers: "c. February 8, 2023",
+  },
+  {
     question: "What is our first favorite song?",
     choices: [
       "a. Those Eyes",
