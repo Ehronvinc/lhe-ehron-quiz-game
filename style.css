@@ -9,13 +9,13 @@
 }
 
 body {
-  background-color: aliceblue;
+  background-color: #fff5f2;
   min-height: 100vh;
 }
 
 /* Navigation */
 .navbar-container {
-  background-color: #6d061e;
+  background-color: #6b0420;
   box-shadow: 1px 1px 5px;
 }
 
@@ -23,22 +23,37 @@ body {
   padding: 10px;
   font-family: "Love Light", cursive;
   font-size: 1.5rem;
-  color: rgb(199, 185, 192);
+  color: #fff5f2;
 }
 
 /* Score */
+.score-text {
+  display: inline-block;
+  color: #fff5f2;
+  background-color: #6b0420;
+  text-shadow: 1px 1px 3px wheat;
+  box-shadow: 0px 0px 3px black;
+  padding: 10px;
+  border-radius: 10px;
+  margin-left: 30px;
+  margin-top: 50px;
+}
 
 /* Hero Section */
 .hero-container {
   font-family: "Love Ya Like A Sister", cursive;
   text-shadow: 1px 1px 3px wheat;
-  font-size: 2rem;
+  font-size: 2.5rem;
   flex: 1;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   margin-top: 200px;
+}
+
+.hero-main {
+  color: #6b0420;
 }
 
 .hero-start-text {
@@ -48,12 +63,13 @@ body {
   align-items: center;
   justify-content: center;
   border: none;
-  color: whitesmoke;
+  color: #fff5f2;
+  box-shadow: 0px 0px 5px rgb(0, 0, 0, 0.2);
   padding: 10px;
   border-radius: 5px;
-  text-shadow: 1px 1px 2px wheat;
-  background-color: #6d061e;
+  background-color: #f4c9d3;
   font-size: 1.2rem;
+  color: #2b0a12;
 }
 
 /* Hide Element */
@@ -70,9 +86,33 @@ body {
   margin-top: 40px;
 }
 
+.btn-container button {
+  font-size: 0.9rem;
+  background-color: #f4c9d3;
+  padding: 5px;
+  border: none;
+  font-family: "Love Ya Like A Sister", cursive;
+  box-shadow: 0px 0px 5px rgb(0, 0, 0, 0.2);
+  cursor: pointer;
+}
+
+.btn-container button:active {
+  color: whitesmoke;
+  background-color: #6d061e;
+}
+
+/* Next Button warn */
+.warn-text {
+  font-family: sans-serif;
+  font-size: 0.7rem;
+  text-shadow: 0px 0px 1px black;
+  color: #6d061e;
+  margin-top: 10px;
+  text-align: center;
+}
+
 /* Questions and answers */
 .question-container {
-  font-size: 1rem;
   margin-top: 150px;
 }
 
@@ -80,8 +120,8 @@ body {
   text-align: center;
   font-family: "Love Ya Like A Sister", cursive;
   text-shadow: 1px 1px 3px wheat;
-  color: #000000;
-  font-size: 2rem;
+  color: #6b0420;
+  font-size: 3rem;
   margin-bottom: 30px;
 }
 
@@ -91,24 +131,33 @@ body {
   justify-content: center;
   grid-template-columns: repeat(2, auto);
   row-gap: 20px;
-  column-gap: 100px;
+  column-gap: 20px;
 }
 
 .choices-container button {
   font-family: "Love Ya Like A Sister", cursive;
-  padding: 5px;
-  background-color: #6d061e;
-  color: whitesmoke;
+  padding: 15px;
+  background-color: #f4c9d3;
+  border: none;
+  border-radius: 10px;
+  font-weight: 700;
+  color: #2b0a12;
+  box-shadow: 0px 0px 5px rgb(0, 0, 0, 0.2);
 }
 
 .choices-container button:hover {
-  background-color: #6d061e7e;
+  cursor: pointer;
+  background-color: #d9798f;
 }
 
 .choices-container button:disabled {
   font-family: "Love Ya Like A Sister", cursive;
-  padding: 5px;
-  background-color: #6d061e;
-  color: whitesmoke;
+  padding: 15px;
+  background-color: #f4c9d3;
+  border: none;
+  border-radius: 10px;
+  font-weight: 700;
+  color: #2b0a12;
+  box-shadow: 0px 0px 5px rgb(0, 0, 0, 0.2);
   cursor: not-allowed;
 }
